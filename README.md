@@ -1,6 +1,10 @@
+Here's the README with the requested changes:
+
+---
+
 # COVID-19 Vaccination Efficiency Analysis
 
-This project analyzes the efficiency of COVID-19 vaccinations using data analysis and machine learning techniques. We ensemble Polynomial Regression, LSTM, and Random Forest models to understand the impact of population metrics and health measures on vaccination efficiency.
+This project analyzes the efficiency of COVID-19 vaccinations using data analysis and machine learning techniques. Currently, we use Ridge Regression to predict vaccination efficiency based on population metrics and health measures. In the second sprint of the project, we plan to ensemble Polynomial Regression, LSTM, and Random Forest models to gain a more comprehensive understanding of the factors impacting vaccination efficiency.
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -20,14 +24,12 @@ This project analyzes the efficiency of COVID-19 vaccinations using data analysi
 This project aims to evaluate the efficiency of COVID-19 vaccinations through various machine learning models. By ensembling Polynomial Regression, LSTM, and Random Forest models, we seek to identify key factors influencing vaccination efficiency and leverage machine learning's predictive capabilities.
 
 ## Data Collection
-
 Data for this study is sourced from publicly available COVID-19 datasets, including:
 - Vaccination rates
 - Population demographics
 - Health metrics
 
 For more information, please visit the [WHO COVID-19 Data Dashboard](https://data.who.int/dashboards/covid19/data).
-
 
 ## Data Preprocessing
 Data preprocessing steps include:
@@ -37,13 +39,16 @@ Data preprocessing steps include:
 - Splitting data into training and testing sets
 
 ## Models Used
-### Polynomial Regression
+### Ridge Regression
+Ridge Regression is a type of linear regression that includes L2 regularization. It is used to prevent overfitting by penalizing large coefficients, making it suitable for predicting vaccination efficiency.
+
+### Polynomial Regression (Planned for Second Sprint)
 A regression analysis method that models the relationship between the dependent and independent variables as an nth degree polynomial.
 
-### Long Short-Term Memory (LSTM)
+### Long Short-Term Memory (LSTM) (Planned for Second Sprint)
 A type of recurrent neural network (RNN) capable of learning long-term dependencies, particularly useful for sequential data.
 
-### Random Forest
+### Random Forest (Planned for Second Sprint)
 An ensemble learning method that constructs multiple decision trees and merges them to get a more accurate and stable prediction.
 
 ## Results
@@ -82,7 +87,7 @@ Ensure you have Python 3.x and pip installed.
 - matplotlib
 
 ## Usage
-1. Simply run the main.py file with the data.csv file in the same directory. 
+1. Simply run the `main.py` file with the `data.csv` file in the same directory.
    ```sh
    python main.py
    ```
@@ -98,3 +103,7 @@ Contributions are welcome! Please fork the repository and create a pull request.
 
 ## License
 Distributed under the MIT License. See `LICENSE` for more information.
+
+---
+
+This README now accurately reflects the current use of Ridge Regression and the planned future use of Polynomial Regression, LSTM, and Random Forest models.
